@@ -1,0 +1,16 @@
+{
+  "name": "LPM_G1",
+  "data_root":"/host/data1/data/CMUhand",
+  "dataset":"HandDataset_LPM",
+  "limbc": 1,
+  "group": "G1",
+  "batch_size": 32,
+  "learning_rate": 1e-4,
+  "lr_decay_epoch": 100,
+  "epochs": 80,
+  "device": [0,1],
+  "weight": 0.5,
+  "weight_decay": 20,
+  "w_decay_ratio": 0.1
+}
+
