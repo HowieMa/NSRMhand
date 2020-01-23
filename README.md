@@ -6,9 +6,13 @@ Pytorch implementation of WACV 2020 paper Nonparametric Structure Regularization
 ## Abstract
 Hand pose estimation is more challenging than body pose estimation due to severe articulation, self-occlusion and high dexterity of the hand. Current approaches often rely on a popular body pose algorithm, such as the Convolutional Pose Machine (CPM), to learn 2D keypoint features. These algorithms cannot adequately address the unique challenges of hand pose estimation, because they are trained solely based on keypoint positions without seeking to explicitly model structural relationship between them. We propose a novel Nonparametric Structure Regularization Machine (NSRM) for 2D hand pose estimation, adopting a cascade multi-task architecture to learn hand structure and keypoint representations jointly. The structure learning is guided by synthetic hand mask representations, which are directly computed from keypoint positions, and is further strengthened by a novel probabilistic representation of hand limbs and an anatomically inspired composition strategy of mask synthesis. We conduct extensive studies on two public datasets - OneHand 10k and CMU Panoptic Hand. Experimental results demonstrate that explicitly enforcing structure learning consistently improves pose estimation accuracy of CPM baseline models, by 1.17% on the ﬁrst dataset and 4.01% on the second one.
 
+Visualization of our proposed LDM-G1, LPM-G1, and our network structure.    
+![LPM G1](readme/ldm_g1.jpg) 
+![LDM G6](readme/lpm_g1.jpg)
 
-![LPM G1](readme/lpm_g1.jpg)
-![LDM G6](readme/ldm_g6.jpg)
+
+![net](readme/net.jpeg)
+
 
 
 ## Highlights
