@@ -1,5 +1,5 @@
 # NSRMhand
-Pytorch implementation of WACV 2020 paper Nonparametric Structure Regularization Machine for 2D Hand Pose Estimation
+Pytorch implementation of WACV 2020 paper [Nonparametric Structure Regularization Machine for 2D Hand Pose Estimation](https://arxiv.org/pdf/2001.08869.pdf)
 
 
 
