@@ -57,3 +57,18 @@ you may need to adjust these parameters for your own dataset.
 - In our experiments and code, we only apply our NSRM to CPM, but we believe it will also work for other pose estimation network, 
 such as Stacked Hourglass, HR-Net.  
 
+
+## Citation
+If you find this project useful for your research, please use the following BibTeX entry. Thank you!   
+
+
+@inproceedings{chen2020nonparametric,                    
+  title={Nonparametric Structure Regularization Machine for 2D Hand Pose Estimation},                 
+  author={Chen, Yifei and Ma, Haoyu and Kong, Deying and Yan, Xiangyi and Wu, Jianbao and Fan, Wei and Xie, Xiaohui},             
+  booktitle={The IEEE Winter Conference on Applications of Computer Vision},                     
+  pages={381--390},                  
+  year={2020}              
+}            
+
+
+
