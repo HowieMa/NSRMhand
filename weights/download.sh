@@ -1,0 +1,1 @@
+wget https://www.dropbox.com/s/b83ongnpggeoebd/best_model.pth

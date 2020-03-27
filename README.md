@@ -1,6 +1,5 @@
 # NSRMhand
-Pytorch implementation of WACV 2020 paper [Nonparametric Structure Regularization Machine for 2D Hand Pose Estimation](https://arxiv.org/pdf/2001.08869.pdf)
-
+Official implementation of WACV 2020 paper [Nonparametric Structure Regularization Machine for 2D Hand Pose Estimation](https://arxiv.org/pdf/2001.08869.pdf) with Pytorch
 
 
 ## Abstract
@@ -21,7 +20,7 @@ which utilizes synthetic hand masks to guide keypoints structure learning.
 - We propose a novel probabilistic representation of hand limbs and an anatomically inspired composition strategy for hand mask synthesis.
 
 ## Running
-0. Prepare  
+#### Prepare  
  ~~~ 
 pytorch >= 1.0  
 torchvision >= 0.2 
@@ -29,11 +28,29 @@ numpy
 matplotlib 
 ~~~
 
-1. Download our formated Panoptic dataset or format your own dataset based on `data_sample/`. 
+#### Inference
+1. Download our trained model (LPM G1&6) by running `sh weights/download.sh` or you can download it directly from this [Dropbox](https://www.dropbox.com/s/b83ongnpggeoebd/best_model.pth?dl=0) link
+
+2. For pose estimation on the demo hand image, run
+~~~
+python inference.py
+~~~
+We provide example images in `images` folder. If set up correctly, the output should look like
+
+![input](images/sample.jpg) 
+![output](images/sample_out.jpg)
+
+**Note**: this model is only trained on Panoptic hand dataset, thus it may not work very well on other scene.
+
+
+#### Training
+
+1. Download the CMU Panoptic Hand dataset from [here](http://domedb.perception.cs.cmu.edu/handdb.html),
+ and crop it based 2.2x ground truth bounding box. 
+If you use your own dataset, please also format it based on `data_sample/`. 
 
 2. Specify your configuration in configs/xxx.json.  
 You can also use the default parameter settings, but remember to change the **data root**.  
-
 
 3. Train model by 
 ~~~
