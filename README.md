@@ -45,9 +45,11 @@ We provide example images in `images` folder. If set up correctly, the output sh
 
 #### Training
 
-1. Download the CMU Panoptic Hand dataset from [here](http://domedb.perception.cs.cmu.edu/handdb.html),
- and crop it based 2.2x ground truth bounding box. 
-If you use your own dataset, please also format it based on `data_sample/`. 
+1. Please download the Panoptic Hand dataset from their official [website](http://domedb.perception.cs.cmu.edu/handdb.html),
+ and crop it based on 2.2x ground truth bounding box. 
+ For your convenience, you can download our preprocessed dataset from [here](https://www.dropbox.com/s/ob0pbssocwszh9v/CMUhand.tar?dl=0).
+ Please DO NOT duplicate it for any commercial purposes, and the copyright still belongs to [Panoptic](http://domedb.perception.cs.cmu.edu/handdb.html). 
+If you want to train your own dataset, please also format it based on this `data_sample/` folder. 
 
 2. Specify your configuration in configs/xxx.json.  
 You can also use the default parameter settings, but remember to change the **data root**.  
